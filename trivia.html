@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One Piece Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Straw Hat Pirates</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">My Works</a>
+    <a href="trivia.html">Quiz</a>
+  </nav>
+
+  <main>
+    <aside class="left-sidebar">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://onepiece.fandom.com/wiki/Straw_Hat_Pirates" target="_blank">Straw Hat Wiki</a></li>
+        <li><a href="https://www.crunchyroll.com/one-piece" target="_blank">Watch One Piece</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h2>Which Straw Hat Are You?</h2>
+      <p>Answer a few questions and discover your inner pirate!</p>
+      <form id="quiz-form">
+        <label>1. What's your biggest strength?</label><br>
+        <select id="q1">
+          <option value="luffy">Courage</option>
+          <option value="zoro">Discipline</option>
+          <option value="nami">Intelligence</option>
+          <option value="sanji">Kindness</option>
+          <option value="robin">Wisdom</option>
+        </select><br><br>
+
+        <label>2. Favorite way to spend your time?</label><br>
+        <select id="q2">
+          <option value="luffy">Exploring</option>
+          <option value="zoro">Training</option>
+          <option value="nami">Planning</option>
+          <option value="sanji">Cooking</option>
+          <option value="robin">Reading</option>
+        </select><br><br>
+
+        <label>3. What's your role in a group?</label><br>
+        <select id="q3">
+          <option value="luffy">Leader</option>
+          <option value="zoro">Protector</option>
+          <option value="nami">Strategist</option>
+          <option value="sanji">Supporter</option>
+          <option value="robin">Advisor</option>
+        </select><br><br>
+
+        <button type="button" onclick="calculateResult()">See Result</button>
+      </form>
+
+      <p id="quiz-result"></p>
+    </section>
+
+    <aside class="right-sidebar">
+      <h3>Contact Me</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Created July 2025 | Inspired by One Piece • Join the Grand Line!</p>
+  </footer>
+</body>
+</html>
